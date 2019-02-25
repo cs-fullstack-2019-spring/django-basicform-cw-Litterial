@@ -10,10 +10,11 @@
 <p>Hi {{accountOwner}}</p>  <!-- Holds on to whatever the person entered their name as-->
 <p>____________________________________________</p>
 {% for account in allAccounts %}    <!-- Loops through ever account-->
-<p>Name:{{account.name}}</p>    <a href=""
-<p>Checking Account Balance{{account.checking}}</p>
-<p>Savings Account Balance{{account.saving}}</p>
+<p>Name:{{account.name}}</p>
+<p>Checking Account Balance:{{account.checking}}</p>
+<p>Savings Account Balance:{{account.savings}}</p>
 <p>Account Date Created:{{account.dateTimeOpen}}</p>
+<a href="{% url 'add5ToAccount' account.id %}">Let me hold $5</a>  <!-- Reads the id of the person with the particular link-->
 <p>____________________________________________</p>
 
 {% endfor %}

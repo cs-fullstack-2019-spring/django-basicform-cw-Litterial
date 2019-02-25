@@ -6,7 +6,7 @@
 </head>
 <body>
 <h1> Is this working?</h1>
-<form action="{% url 'welcome' %}" method="post">
+<form action="{% url 'welcome' %}" method="post">  <!--named route for welcome (name of index -->
     {% csrf_token %}
     <!--{% for account in allAccounts %}-->
         <!--<p>Name:{{account.name}}</p>-->
