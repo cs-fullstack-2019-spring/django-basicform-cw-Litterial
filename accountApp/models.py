@@ -8,3 +8,6 @@ class Account(models.Model):
     checking = models.DecimalField(max_digits=16, decimal_places=4)
     savings = models.DecimalField(max_digits=16, decimal_places=4)
     dateTimeOpen = models.DateTimeField(default=timezone.now)
+
+    def __str__(self):
+        return f'{self.name}'

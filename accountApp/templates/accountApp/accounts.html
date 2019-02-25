@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>I do not understand why this was so hard for me to understand</h1>
+{% csrf_token %}
+<p>Hi {{accountOwner}}</p>  <!-- Holds on to whatever the person entered their name as-->
+<p>____________________________________________</p>
+{% for account in allAccounts %}    <!-- Loops through ever account-->
+<p>Name:{{account.name}}</p>    <a href=""
+<p>Checking Account Balance{{account.checking}}</p>
+<p>Savings Account Balance{{account.saving}}</p>
+<p>Account Date Created:{{account.dateTimeOpen}}</p>
+<p>____________________________________________</p>
+
+{% endfor %}
+</body>
+</html>
