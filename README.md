@@ -6,3 +6,5 @@ Create an index that has one input field. Send that information to another page 
 
 Challenge:
 Put a text box at the top of the entries page. When the submit button is clicked, it should add/subtract from the clicked account the amount in the text box.
+<hr>
+2 points.
